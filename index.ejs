@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+  <style>
+    body { background: white; color: black; font-family: Arial; text-align: center; }
+    img { border-radius: 50%; margin-top: 20px; }
+    a { display: inline-block; margin-top: 20px; padding: 10px 20px; border: 1px solid black; text-decoration: none; color: black; }
+    a:hover { background: black; color: white; }
+  </style>
+</head>
+<body>
+  <h1>Welcome <%= user.username %>!</h1>
+  <img src="https://cdn.discordapp.com/avatars/<%= user.id %>/<%= user.avatar %>.png" width="100" />
+  <br>
+  <a href="/logout">Logout</a>
+</body>
+</html>
